@@ -1,0 +1,92 @@
+@import url('http://fonts.googleapis.com/css?family=Exo+2:400,700');
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; height: auto; }
+
+/** page structure **/
+#w {
+  display: block;
+  max-width: 1100px;
+  min-width: 280px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+
+/** filters list **/
+#filter-list {
+display: block;
+width: 11%;
+text-align: center;
+margin-bottom: 25px;
+float: left;
+margin-right: 3%;
+}
+
+#filter-list li:hover {
+  background: #e7e2eb;
+}
+#filter-list li.active {
+  background: #d8c5e7;
+}
+
+
+/** portfolio list **/
+#portfolio {
+display: block;
+padding: 0px 12px;
+margin-bottom: 35px;
+text-align: center;
+width: 100%;
+margin-left: 2%;
+padding-left: 150px;
+}
+
+#portfolio .item {
+  display: none;
+  opacity: 0;
+  width: 40%;
+  vertical-align: top;
+  margin-bottom: 25px;
+  margin-right: 20px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  -moz-box-sizing: border-box;
+}
+#portfolio .item a {
+  display: inline-block;
+  max-width: 100%;
+  text-decoration: none;
+  background: #fff;
+
+}
+#portfolio .item img {
+  padding: 3px;
+  max-width: 100%;
+  border:1px solid #ccc;
+}
+
+/** clearfix **/
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; }
+ 
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+
+/** media queries **/
+@media screen and (max-width: 720px) {
+  h1 { font-size: 2.7em; }
+}
+
+@media screen and (max-width: 500px) {
+  h1 { font-size: 2.0em; }
+  #filter-list { padding: 0 18px;
+    width:100%;
+    clear:both;}
+  #filter-list li { display: block; margin-bottom: 3px; }
+  
+  #portfolio { margin-bottom: 20px; padding-left:0;}
+  #portfolio .item { width: 100%; margin-bottom: 12px; margin-right: 0; }
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>Filterable Portfolio using MixItUp - TemplateMonster Demo</title>
+  <meta name="author" content="Jake Rocheleau">
+  <link rel="shortcut icon" href="http://www.templatemonster.com/favicon.ico">
+  <link rel="icon" href="http://www.templatemonster.com/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+</head>
+
+<body>
+  <div id="w">
+    <h1>Responsive Filter-Based Portfolio</h1>
+    
+    <ul id="filter-list" class="clearfix">
+      <li class="filter" data-filter="all">Tutto</li>
+      <li class="filter" data-filter="webdesign">Web Design</li>
+      <li class="filter" data-filter="appicon">Icone e loghi</li>
+      <li class="filter" data-filter="iosappui">Locandine</li>
+      <li class="filter" data-filter="illustration">Illustrazioni</li>
+    </ul><!-- @end #filter-list -->
+    
+    <ul id="portfolio">
+      <!--web designs-->
+      <li class="item webdesign"><a href="http://firma.imparaora.it"><img src="./images/firma.jpg" alt="Sito firma.imparaora.it Drupal"></a></li>
+      <li class="item webdesign"><a href="http://www.seitoscana.it"><img src="./images/sei.jpg" alt="Sito SeiToscana - Drupal - strutturazione e sviluppo back-end"></a></li>
+      <li class="item webdesign"><a href="http://www.sicurete.it"><img src="./images/sicurete.jpg" alt="Sito Sicurete - Drupal - restyling tema"></a></li>
+
+      <li class="item illustration"><a href="#"><img src="./images/polly.jpg" alt="Disegno digitale con tavoletta Wacom"></a></li>
+      <li class="item illustration"><a href="#"><img src="./images/void.jpg" alt="Disegno digitale con tavoletta Wacom"></a></li>
+
+      <li class="item appicon"><a href="http://www.sicurete.it"><img src="images/sicuretelogo.jpg" alt="Restyling logo Sicurete"></a></li>
+      <li class="item appicon"><a href="#"><img src="images/armormedia.jpg" alt="Logo Armor Media"></a></li>
+      <li class="item appicon"><a href="#"><img src="images/firmapiu.jpg" alt="Icone applicazione FirmaPiù"></a></li>
+
+
+      <li class="item iosappui"><a href="http://dribbble.com/shots/1338313-MMORU-forum-app"><img src="./images/magda.jpg" alt="Poster A3 locandina concerto The Magdalene"></a></li>
+
+    </ul><!-- @end #portfolio -->
+  </div><!-- @end #w -->
+<script type="text/javascript">
+$(function(){
+  $('#portfolio').mixitup({
+    targetSelector: '.item',
+    transitionSpeed: 450
+  });
+});
+</script>
+</body>
+</html>
